@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://192.168.129.91/</value>
+    </property>
+    <property>
+        <name>mapred.job.tracker</name>
+        <value>192.168.129.91:8021</value>
+    </property>
+    <property>
+        <name>mapreduce.jobtracker.staging.root.dir</name>
+        <value>/dsarbe</value>
+    </property>
+</configuration>
