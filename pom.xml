@@ -6,13 +6,14 @@
 
     <groupId>hadoop-word-count</groupId>
     <artifactId>hadoop-word-count</artifactId>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <version>1.0.0.1</version>
 
     <properties>
         <hadoop.version>2.0.0-mr1-cdh4.7.0</hadoop.version>
         <jdk.version>1.6</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <hadoop.home>/usr/lib/hadoop/hadoop</hadoop.home>
     </properties>
 
     <dependencies>
@@ -82,8 +83,6 @@
             <id>maven2</id>
             <url>http://repo1.maven.org/maven2</url>
         </repository>
-
-
     </repositories>
 
 
@@ -149,7 +148,7 @@
                 <artifactId>maven-hadoop-plugin</artifactId>
                 <version>0.20.1</version>
                 <configuration>
-                    <hadoopHome>/usr/lib/hadoop</hadoopHome>
+                    <hadoopHome>${hadoop.home}</hadoopHome>
                 </configuration>
             </plugin>
 

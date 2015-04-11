@@ -13,13 +13,13 @@ public class RunWordCount {
     private static final String HADOOP_USER_NAME = "HADOOP_USER_NAME";
 
     public static void main(String[] args) throws Exception {
-        //Set the config file to be loaded
 
-        String conf = "conf/hadoop-remote.xml";
+        //Set the config file to be loaded
+        String conf = "conf/hadoop-local.xml";
         String inputPath = "";
 
         if (conf.contains("-local.xml")) {
-            inputPath = "src/main/resources/v3/";
+            inputPath = "src/main/resources/content/*.*";
         }
         if (conf.contains("-localhost.xml")) {
             inputPath = "content/*.*";

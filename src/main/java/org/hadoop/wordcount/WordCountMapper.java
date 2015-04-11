@@ -24,8 +24,8 @@ public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritabl
     @Override
     public void map(LongWritable key, Text value, Context context)
             throws IOException, InterruptedException {
+
         String line = value.toString();
-        context.write(new Text(line), one);
         StringTokenizer itr = new StringTokenizer(line);
         while (itr.hasMoreTokens()) {
             word.set(itr.nextToken());
