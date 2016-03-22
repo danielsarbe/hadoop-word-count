@@ -4,6 +4,8 @@ A basic example of Hadoop Word Count implementation including the unit tests wit
 
 1. Upload samples to hdfs
 
+
+hadoop fs -mkdir content/
 hadoop fs -fs hdfs://localhost:8020 -put src/main/resources/content/*.* content/
 
 2. Compile and run

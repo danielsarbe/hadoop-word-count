@@ -15,7 +15,7 @@ public class RunWordCount {
     public static void main(String[] args) throws Exception {
 
         //Set the config file to be loaded
-        String conf = "conf/hadoop-local.xml";
+        String conf = "conf/hadoop-localhost.xml";
         String inputPath = "";
 
         if (conf.contains("-local.xml")) {
