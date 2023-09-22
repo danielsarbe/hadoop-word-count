@@ -10,7 +10,7 @@
     <version>1.0.0.1</version>
 
     <properties>
-        <hadoop.version>2.0.0-mr1-cdh4.7.0</hadoop.version>
+        <hadoop.version>2.7.3.2.6.5.0-292</hadoop.version>
         <jdk.version>1.6</jdk.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <hadoop.home>/usr/lib/hadoop/hadoop</hadoop.home>
